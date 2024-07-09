@@ -18,4 +18,24 @@ insert into employee4 (name,salary,mobile,age) values ("abhi2",5000,4657896609,1
 insert into employee4 (name,salary,mobile,age) values ("abhi3",15000,5768694005,30);
 select * from employee4;
 
-
+create database college;
+use college;
+create table teacher(id int primary key,name varchar(300) not null,mobile int not null,address varchar(400) default "thakkallapalli");
+select * from teacher;
+insert into teacher values (1,"abhi1",127834788,"putlur");
+select * from teacher;
+insert into teacher (id,name,mobile)  values (2,"abhi2",12567447);
+select * from teacher;
+create table teacher1(id int primary key auto_increment,
+name varchar(290) not null,
+mobile bigint not null,
+address varchar(200) default "andhra",
+age int not null,
+salary bigint not null,
+check ((age>=18) and (salary>=10000)));
+insert into teacher1 (id,name,mobile,address,age,salary) values (1,"abhi1",293987575,"tadipatri",18,230000);
+select * from teacher1;
+insert into teacher1 (name,mobile,age,salary) values ("sigma",626747849,45,364890);
+select * from teacher1;
+insert into teacher1 (name,mobile,age,salary) values ("bharath",83848586,15,267);
+select * from teacher1;
